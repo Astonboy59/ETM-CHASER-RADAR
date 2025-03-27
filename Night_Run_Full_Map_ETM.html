@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5d67c3e26c1af3bafda3389ff3da6a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5d67c3e26c1af3bafda3389ff3da6a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5d67c3e26c1af3bafda3389ff3da6a9 = L.map(
+                "map_f5d67c3e26c1af3bafda3389ff3da6a9",
+                {
+                    center: [40.7579, -73.9294],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb396b94cc6519f8f1fa1d4e2a6c5551 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f5d67c3e26c1af3bafda3389ff3da6a9);
+        
+    
+            var marker_cluster_5334d454ab099bc7d317f92797b22638 = L.markerClusterGroup(
+                {}
+            );
+            map_f5d67c3e26c1af3bafda3389ff3da6a9.addLayer(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var marker_2c9b08e262a9971cb156ae020121bbde = L.marker(
+                [40.7703, -73.918],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_74d3bcda52fa705a6905ae6b1283b509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c9b08e262a9971cb156ae020121bbde.setIcon(icon_74d3bcda52fa705a6905ae6b1283b509);
+        
+    
+        var popup_30b90dd02337883ef7218b92e4fbff83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0de419755787d21c113355b472625d24 = $(`<div id="html_0de419755787d21c113355b472625d24" style="width: 100.0%; height: 100.0%;">Astoria Blvd & 31st Street</div>`)[0];
+            popup_30b90dd02337883ef7218b92e4fbff83.setContent(html_0de419755787d21c113355b472625d24);
+        
+
+        marker_2c9b08e262a9971cb156ae020121bbde.bindPopup(popup_30b90dd02337883ef7218b92e4fbff83)
+        ;
+
+        
+    
+    
+            var marker_ff99a7fda5ca4fcd633f0613f9d0bae3 = L.marker(
+                [40.7655, -73.9127],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_35525da170cb71251be4f3bf679a814b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff99a7fda5ca4fcd633f0613f9d0bae3.setIcon(icon_35525da170cb71251be4f3bf679a814b);
+        
+    
+        var popup_2579d7ac6b285b856da6cfb42e2fecab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a5f8c9647f6efeb11ff398c4f2a30f2 = $(`<div id="html_0a5f8c9647f6efeb11ff398c4f2a30f2" style="width: 100.0%; height: 100.0%;">30th Avenue & Steinway</div>`)[0];
+            popup_2579d7ac6b285b856da6cfb42e2fecab.setContent(html_0a5f8c9647f6efeb11ff398c4f2a30f2);
+        
+
+        marker_ff99a7fda5ca4fcd633f0613f9d0bae3.bindPopup(popup_2579d7ac6b285b856da6cfb42e2fecab)
+        ;
+
+        
+    
+    
+            var marker_90945a8e5ccdf7176df1f5b686d02049 = L.marker(
+                [40.7746, -73.916],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_26a356d314cf1eaa6ba899b8d2d7740e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90945a8e5ccdf7176df1f5b686d02049.setIcon(icon_26a356d314cf1eaa6ba899b8d2d7740e);
+        
+    
+        var popup_8fc5297ca7923c5ac7509b75896301c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2919af24438f36bba1857d90b2ec0fd4 = $(`<div id="html_2919af24438f36bba1857d90b2ec0fd4" style="width: 100.0%; height: 100.0%;">Hoyt Avenue N & Crescent St</div>`)[0];
+            popup_8fc5297ca7923c5ac7509b75896301c4.setContent(html_2919af24438f36bba1857d90b2ec0fd4);
+        
+
+        marker_90945a8e5ccdf7176df1f5b686d02049.bindPopup(popup_8fc5297ca7923c5ac7509b75896301c4)
+        ;
+
+        
+    
+    
+            var marker_bc3ba2933e410ea5d009cc441932aa24 = L.marker(
+                [40.7411, -73.9166],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_8e117783279e68d026e24400536929de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc3ba2933e410ea5d009cc441932aa24.setIcon(icon_8e117783279e68d026e24400536929de);
+        
+    
+        var popup_3af93813461dbe3ca5eb6b491e35da92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16328076264d34e77fc43508cdb8301d = $(`<div id="html_16328076264d34e77fc43508cdb8301d" style="width: 100.0%; height: 100.0%;">Queens Blvd & 48th St</div>`)[0];
+            popup_3af93813461dbe3ca5eb6b491e35da92.setContent(html_16328076264d34e77fc43508cdb8301d);
+        
+
+        marker_bc3ba2933e410ea5d009cc441932aa24.bindPopup(popup_3af93813461dbe3ca5eb6b491e35da92)
+        ;
+
+        
+    
+    
+            var marker_09120f3c22fc5c98315a1461fd043ae8 = L.marker(
+                [40.7375, -73.9244],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_49d29407c6f91b9c55b31d9b005c0cec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09120f3c22fc5c98315a1461fd043ae8.setIcon(icon_49d29407c6f91b9c55b31d9b005c0cec);
+        
+    
+        var popup_d4ae07b650cdfde9c399b138a26367b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_428a834bc2d20a126688c2bf7f84ae96 = $(`<div id="html_428a834bc2d20a126688c2bf7f84ae96" style="width: 100.0%; height: 100.0%;">Greenpoint Ave & 39th Pl</div>`)[0];
+            popup_d4ae07b650cdfde9c399b138a26367b3.setContent(html_428a834bc2d20a126688c2bf7f84ae96);
+        
+
+        marker_09120f3c22fc5c98315a1461fd043ae8.bindPopup(popup_d4ae07b650cdfde9c399b138a26367b3)
+        ;
+
+        
+    
+    
+            var marker_f33279348fd2a4a8fe41fa6fa57d357e = L.marker(
+                [40.7454, -73.9185],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_99f7822b654b6bdda9d30347507c1f3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f33279348fd2a4a8fe41fa6fa57d357e.setIcon(icon_99f7822b654b6bdda9d30347507c1f3a);
+        
+    
+        var popup_6b04347cdcd6d5c3e3958680aacf1301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eea8c76008fec0f701bd9669b56c806 = $(`<div id="html_6eea8c76008fec0f701bd9669b56c806" style="width: 100.0%; height: 100.0%;">Skillman Ave & 43rd St</div>`)[0];
+            popup_6b04347cdcd6d5c3e3958680aacf1301.setContent(html_6eea8c76008fec0f701bd9669b56c806);
+        
+
+        marker_f33279348fd2a4a8fe41fa6fa57d357e.bindPopup(popup_6b04347cdcd6d5c3e3958680aacf1301)
+        ;
+
+        
+    
+    
+            var marker_4690d7adc19dae023e23b78615a5b8cc = L.marker(
+                [40.7572, -73.9145],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_7e2929f47831357a360256a9360db91d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4690d7adc19dae023e23b78615a5b8cc.setIcon(icon_7e2929f47831357a360256a9360db91d);
+        
+    
+        var popup_55aefa93fba574dcaa0011e517859e15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fa20b7bc537262d8bc67258c8275f47 = $(`<div id="html_8fa20b7bc537262d8bc67258c8275f47" style="width: 100.0%; height: 100.0%;">Gas Stop: BP Gas Station - Northern Blvd</div>`)[0];
+            popup_55aefa93fba574dcaa0011e517859e15.setContent(html_8fa20b7bc537262d8bc67258c8275f47);
+        
+
+        marker_4690d7adc19dae023e23b78615a5b8cc.bindPopup(popup_55aefa93fba574dcaa0011e517859e15)
+        ;
+
+        
+    
+    
+            var marker_b20645c8551327db39440d74b48920ba = L.marker(
+                [40.7422, -73.9211],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_66feb490a5ab7ceb564ca6facbfb1bcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b20645c8551327db39440d74b48920ba.setIcon(icon_66feb490a5ab7ceb564ca6facbfb1bcf);
+        
+    
+        var popup_415235b7d72a58870f7f8b79c5e6a100 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce98b3322dbe52f556e28c850992b80d = $(`<div id="html_ce98b3322dbe52f556e28c850992b80d" style="width: 100.0%; height: 100.0%;">Gas Stop: Mobil Gas - Queens Blvd</div>`)[0];
+            popup_415235b7d72a58870f7f8b79c5e6a100.setContent(html_ce98b3322dbe52f556e28c850992b80d);
+        
+
+        marker_b20645c8551327db39440d74b48920ba.bindPopup(popup_415235b7d72a58870f7f8b79c5e6a100)
+        ;
+
+        
+    
+    
+            var marker_e842545adda7bebfcd55624391a71928 = L.marker(
+                [40.7449, -73.9187],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_17ac7dd01a0d63fcf7d3f5e1f86fc181 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e842545adda7bebfcd55624391a71928.setIcon(icon_17ac7dd01a0d63fcf7d3f5e1f86fc181);
+        
+    
+        var popup_9f8479a275d47b31f78d3c350bfdb0eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bd982baf2854361cce7b224d80f3138 = $(`<div id="html_2bd982baf2854361cce7b224d80f3138" style="width: 100.0%; height: 100.0%;">Food Stop: Dunkin - Queens Blvd</div>`)[0];
+            popup_9f8479a275d47b31f78d3c350bfdb0eb.setContent(html_2bd982baf2854361cce7b224d80f3138);
+        
+
+        marker_e842545adda7bebfcd55624391a71928.bindPopup(popup_9f8479a275d47b31f78d3c350bfdb0eb)
+        ;
+
+        
+    
+    
+            var marker_5693d4569b260737a9934e8484ef17c8 = L.marker(
+                [40.7589, -73.9153],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_2d2234a17b5f8b2d8bb6ac1554baa2e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5693d4569b260737a9934e8484ef17c8.setIcon(icon_2d2234a17b5f8b2d8bb6ac1554baa2e2);
+        
+    
+        var popup_0bd6752c0e9c842e8e775ab9f14f77ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cd50f3f60fc7b81ae657d91110daf7c = $(`<div id="html_0cd50f3f60fc7b81ae657d91110daf7c" style="width: 100.0%; height: 100.0%;">Food Stop: White Castle - Northern Blvd</div>`)[0];
+            popup_0bd6752c0e9c842e8e775ab9f14f77ce.setContent(html_0cd50f3f60fc7b81ae657d91110daf7c);
+        
+
+        marker_5693d4569b260737a9934e8484ef17c8.bindPopup(popup_0bd6752c0e9c842e8e775ab9f14f77ce)
+        ;
+
+        
+    
+    
+            var marker_07953fbbc1d8010a2a54f621deb075fa = L.marker(
+                [40.7641, -73.9163],
+                {}
+            ).addTo(marker_cluster_5334d454ab099bc7d317f92797b22638);
+        
+    
+            var icon_bf852d5e593893f854de73f092cc5c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_07953fbbc1d8010a2a54f621deb075fa.setIcon(icon_bf852d5e593893f854de73f092cc5c9c);
+        
+    
+        var popup_3d09d8b81843eebbba8abbf4e13382a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ffc28375fef986b32fb2d95691ad9ae = $(`<div id="html_0ffc28375fef986b32fb2d95691ad9ae" style="width: 100.0%; height: 100.0%;">Food Stop: 7-Eleven - 30th Ave</div>`)[0];
+            popup_3d09d8b81843eebbba8abbf4e13382a8.setContent(html_0ffc28375fef986b32fb2d95691ad9ae);
+        
+
+        marker_07953fbbc1d8010a2a54f621deb075fa.bindPopup(popup_3d09d8b81843eebbba8abbf4e13382a8)
+        ;
+
+        
+    
+    
+            var marker_c0eb27f8fa75ce1014a9dc3c619b8a74 = L.marker(
+                [40.7579, -73.9294],
+                {}
+            ).addTo(map_f5d67c3e26c1af3bafda3389ff3da6a9);
+        
+    
+            var icon_c5eb5651e57ac1d0824ac113c8c473f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0eb27f8fa75ce1014a9dc3c619b8a74.setIcon(icon_c5eb5651e57ac1d0824ac113c8c473f6);
+        
+    
+        var popup_bb2c4a00b2092bad5b7356fff2ed45d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52367988875172b698bdd17889c6e430 = $(`<div id="html_52367988875172b698bdd17889c6e430" style="width: 100.0%; height: 100.0%;">Main Night Staging Area: 38th Ave & 31st St</div>`)[0];
+            popup_bb2c4a00b2092bad5b7356fff2ed45d8.setContent(html_52367988875172b698bdd17889c6e430);
+        
+
+        marker_c0eb27f8fa75ce1014a9dc3c619b8a74.bindPopup(popup_bb2c4a00b2092bad5b7356fff2ed45d8)
+        ;
+
+        
+    
+</script>
+</html>
